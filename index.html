@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Task 01 - Reverse String</title></head>
+<body>
+  <h2>Reverse a String</h2>
+  <input id="s" placeholder="Enter text" />
+  <button id="btn">Reverse</button>
+  <p id="out"></p>
+
+  <script>
+    const reverseString = (str) => str.split("").reverse().join("");
+
+    document.getElementById("btn").addEventListener("click", () => {
+      const s = document.getElementById("s").value;
+      document.getElementById("out").textContent = reverseString(s);
+    });
+  </script>
+</body>
+</html>
